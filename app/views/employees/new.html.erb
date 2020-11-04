@@ -1,0 +1,9 @@
+<h1> Create a New Employee </h2> 
+
+  <% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p><%= error %></p> <br>
+    <% end %>
+  <% end %> 
+
+<%= render partial: "form" %> 
